@@ -41,7 +41,7 @@ fs.readFile('input.txt', 'utf-8', (err,data) => {
         
 
 
-    let ans = 0
+    let result = 0
 
     for (let i = 0; i < parts.length; i++) {
         const p = parts[i].split('\n')
@@ -49,9 +49,9 @@ fs.readFile('input.txt', 'utf-8', (err,data) => {
         const b = eval(p[1])
 
         if (compare(a, b) == 1)
-            ans += i + 1
+            result += i + 1
     }
 
-    console.log(ans);
+    console.log(result);
 
 })
